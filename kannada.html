@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamatha Wheths Manjunath</title>
+    <link  rel="shortcut icon" href="./assets/image/kavitha.jpg" type="image/x-icon" >
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Chokokutai&family=Dancing+Script:wght@400..700&family=Eater&family=Oleo+Script:wght@400;700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ponnala&family=Sarina&display=swap');
+        *{  
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            color: rgb(135, 195, 232);
+            font-family: "Ponnala", serif;
+            font-weight: 900;
+            font-style: normal;
+
+        }
+        
+        main{
+            background: linear-gradient(45deg,rgb(80, 80, 80), rgb(0, 0, 0), rgb(71, 70, 70));
+            min-height: 250vh;
+            min-width: 100%;
+        }
+        .hea-but{
+            position: fixed;
+            padding: 5px 8px 1px ;
+            transform: translatey(5%);
+            right: 0%;
+            font-size: 1rem;
+            background-color: transparent;
+            color: rgb(163, 163, 163);
+        }
+        .hea-but a{
+            text-decoration: none;
+            color: rgb(184, 187, 32);
+           
+        }
+        .header-img-1{
+            width: 350px;
+            padding: 5px;
+            height: 350px;
+            top: -10px;
+            left: -10px;
+            transform: rotate(90deg );
+            position: fixed;
+        }
+        .header-img-2{
+            width: 350px;
+            height: 350px;
+            position: fixed;
+            transform: rotate(-90deg);
+            bottom: -10px;
+            right: -10px;
+        }
+        .home-name h4{
+            padding-top: 100px;
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        .home-name h1{
+            font-size: 3rem;
+            font-weight: 600;
+            /* color: hsl(33, 100%, 83%); */
+            padding-bottom: 40px;
+        }
+        .ring{
+            width: 150px;
+            padding-top:70px ;
+           
+        }
+        .home-name h2{
+            font-size: 3rem;
+            font-weight: 600;
+            color:rgb(194, 151, 10) ;
+            padding-top: 40px;
+        }
+        .mamatha{
+            padding-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+        .mamatha h1{
+            font-size: 2.5rem;
+            font-weight: 700;
+            color:rgb(194, 151, 10) ;
+        }
+        .kalasha-1{
+            width: 50px;
+            height: 50px;
+        }
+        .kalasha-2{
+            width: 50px;
+            height: 50px;
+        }
+        .br{
+            border-bottom: 3px solid goldenrod;
+            padding-top: 50px;
+            width: 80%;
+            text-align: center;
+            border-radius: 50%;
+        }
+        .img-prem{
+            padding-top: 50px;
+            width: 200px;
+            height: 250px;
+            transform: translatey(-50%)rotate(90deg);
+            overflow: hidden;
+            animation: box 3s linear infinite;
+        }
+        /* @keyframes box{
+            0%{
+              transform: rotate(0deg);  
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        } */
+        .img-photo{
+            transform: translateY(80%);
+            width: 120px;
+            height: 120px;z-index: -5;
+            border-radius: 80%;
+        }
+        .manjunath{
+            
+            transform: translatey(-120%);
+            /* padding-top: 50px; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+        .manjunath h1{
+            font-size: 2.5rem;
+            font-weight: 700;
+            color:rgb(194, 151, 10) ;
+        }
+        .rogh{
+            width: 500px;
+            height: 200px;  
+        }
+        .pero{
+            font-size: 1.2rem;
+            padding: 50px 0;
+
+            
+        }
+        .plase{
+            width: 300px;
+            border: 3px solid goldenrod;
+            padding: 15px;
+            height: 180px;
+            
+        }
+        .samp{
+            font-size: 2rem;
+        }
+
+        button{
+            border: none;
+            padding: 10px 15px;
+            background-color:  hsla(60, 1%, 30%, 0.601);
+            font-size: 1.5rem;
+            margin: 10px;
+            color: rgb(255, 255, 255);
+            border-radius: 30px;
+            border: 3px solid hsl(35, 85%, 35%);
+            /* box-shadow: 0px 0px 20px   hsla(46, 91%, 82%, 0.568); */
+        }
+        .button{
+            padding-top: 50px;
+            gap:50px;
+            
+        }
+        .button a{
+            text-decoration: none;
+            color: rgb(255, 208, 208);
+        }
+        .welcome{
+            font-size: 4rem;
+            padding: 50px 0;
+        }
+        audio{
+            display: none;
+        }
+
+
+        @media(max-width:350Px){
+                 main{
+                    /* padding-top: 100px; */
+                    min-width: 100%;
+                    background: center cover;
+                }
+                .header-img-1{
+                    display: none;
+                    width: 80px;
+                    height: 80px;
+                }
+                .header-img-2{
+                    width: 80px;
+                    height: 80px;
+                }     
+                .home-name h1{
+                    font-size: 0.8rem;
+                }
+                .home-name h3{
+                    font-size: 1rem;
+                }
+                .home-name h4{
+                    padding-top: 50px;
+                    font-size: 1rem;
+                }
+                .home-name h2{
+                    font-size: 1rem;
+                }
+                .ring{
+                    width: 100px;
+                }
+                .br{
+                    width: 150px;
+                }
+                .mamatha h1{
+                    font-size: 0.8rem;
+                }
+                .mamatha img{
+                    width: 20px;
+                    height: 20px;
+                    display: none;
+                }
+                .manjunath h1{
+                    font-size: 0.8rem;
+                }
+                .manjunath img{
+                    width: 20px;
+                    height: 20px;
+                    display: none   ;
+                }
+                .rogh{
+                    width: 120px;
+                    height: 50px;
+                }
+                .welcome{
+                    font-size: 2rem;
+                    padding-bottom: 50px;
+                }
+        }
+        @media(max-width:576px){
+            main{
+                    padding: 8px;
+                    width: 100%;
+                }
+                .header-img-1{
+                    width: 180px;
+                    height: 180px;
+                }
+                .header-img-2{
+                    width: 180px;
+                    height: 180px;
+                }     
+                .home-name h1{
+                    
+                    font-size: 1.5rem;
+                }
+                .home-name h3{
+                    font-size: 1.1rem;
+                }
+                .home-name h4{
+                    padding-top: 100px;
+                    font-size: 1.2rem;
+                }
+                .home-name h2{
+                    font-size: 1rem;
+                }
+                .ring{
+                    width: 100px;
+                }
+                .br{
+                    width: 350px;
+                }
+                .mamatha h1{
+                    font-size: 0.8rem;
+                }
+                .mamatha img{
+                    display: none;
+                    width: 20px;
+                    height: 20px;
+                }
+                .manjunath h1{
+                    font-size: 0.5rem;
+                }
+                .manjunath img{
+                    display: none;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            @media(max-width:768px){
+                main{
+                    width: 100%;
+                }
+                .header-img-1{
+                    width: 220px;
+                    height: 220px;
+                }
+                .header-img-2{
+                    width: 220px;
+                    height: 220px;
+                }     
+                .home-name h1{
+                    font-size: 2rem;
+                }
+                .home-name h3{
+                    font-size: 1.5rem;
+                }
+                .home-name h4{
+                    font-size: 1.2rem;
+                }
+                .home-name h2{
+                    font-size: 2.5rem;
+                }
+                .ring{
+                    width: 100px;
+                }
+                .br{
+                    width: 350px;
+                }
+                .mamatha h1{
+                    font-size: 2.2rem;
+                }
+                .mamatha img{
+                    width: 40px;
+                    height: 40px;
+                }
+                .manjunath h1{
+                    font-size: 2.2rem;
+                }
+                .manjunath img{
+                    width: 40px;
+                    height: 40px;
+                }
+                .rogh{
+                    width: 300px;
+                    height: 100px;
+                }
+        }
+       
+       
+
+    </style>
+</head>
+<body>
+    <main>
+    <header>
+        <button class="hea-but"><a href="./index.html"> ENGLISH</a></button>
+
+        <img class="header-img-1" src="http://clipart-library.com/img/1559336.png" alt="loding" >
+        <img class="header-img-2" src="http://clipart-library.com/img/1559336.png" alt="loding" >
+    </header>
+                <div class="home-name">
+                    <center>
+                        <h4>!! ಶ್ರೀ ಮೈಲಾರಲಿಂಗೇಶ್ವರ ಕೃಪಾ !!</h4>
+                <h1>~~ ಮೇಧಾರ ಪರಿವಾರ~~</h1>
+                <h3>!!ಶ್ರೀಮತಿ ದುರ್ಗಮ್ಮ, ಲಕ್ಷ್ಮಣ್ಣ ಮೇಧಾರ್!!</h3>
+
+                <img class="ring" src="https://purepng.com/public/uploads/large/purepng.com-gold-ring-with-diamondsjewelryjewellerybroochesringsnecklacesearringsearringsornamentsflowersdiamond-1701528880572wdbxw.png" alt="loding">
+
+                <h2>ನಿಶ್ಚಿತಾರ್ಥ ಸಮಾರಂಭ</h2>
+                    </center>
+
+                </div>
+                <center><div class="br"></div></center>
+
+
+                <div class="mamatha">
+                   
+                    <img class="kalasha-1" src="https://www.freeiconspng.com/uploads/pooja-high-resolution-kalash-png-icon-2.png" alt="loding">
+                    <h1 data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="500">!! ಮಮತಾ !!</h1>
+                    <img class="kalasha-1" src="https://www.freeiconspng.com/uploads/pooja-high-resolution-kalash-png-icon-2.png" alt="loding">
+                </div>
+                
+
+                    <center>
+                        <img class="img-photo" src="./assets/image/kavitha.jpg" alt="loding">
+                        <br>
+                    <img class="img-prem" src="https://pngimg.com/uploads/floral_frame/floral_frame_PNG30.png" alt="">
+                    <br>
+                    </center>
+                    <div class="manjunath">
+                        <img class="kalasha-1" src="https://www.freeiconspng.com/uploads/pooja-high-resolution-kalash-png-icon-2.png" alt="loding">
+                        
+                        <h1 data-aos="fade-right"
+                        data-aos-anchor="#example-anchor"
+                        data-aos-offset="500"
+                        data-aos-duration="500"> !! ಮಂಜುನಾಥ್ !!</h1>
+                        <img class="kalasha-1" src="https://www.freeiconspng.com/uploads/pooja-high-resolution-kalash-png-icon-2.png" alt="loding">
+                    </div>
+
+                    <center>
+                        <img class="rogh" src="http://www.pngmart.com/files/8/Romantic-Pink-Flower-Border-PNG-Photos.png" alt="">
+
+                            <p class="pero">ಕ್ರೋಧಿನಾಮ ಸಂಖ್ಯೆ 1946. ಕಾರ್ತಿಕ ಬಿ. 10 ಶುಕ್ರವಾರ ದಿನಾಂಕ: 27-12-2024 ರಂದು ಬೆಳಿಗ್ಗೆ 11-34 AM <br> ಮಿಥುನ ನಿಶ್ಚಿತಾರ್ಥ ಶುಭ ದಿನದಂದು, ನಿಶ್ಚಿತಾರ್ಥ.</p>
+                        <div class="plase">
+                            <h1>ಸ್ಥಳ</h1>
+                            <p>ಮೈಲಾಪುರ ಅಗಸಿ  ಚಾಟಿತೋಟ, ಯಾದಗಿರಿ, <samp class="samp">585201</samp></p>
+                        </div>
+
+                        <audio controls autoplay  type="adio/mp3">
+                            <source src="./assets/image/audio/music.mp3">
+                        </audio>
+
+                        <div class="button">
+                            <button class="but-1"><a href="https://www.google.co.in/maps/dir/12.9930341,77.5391677/16.7705646,77.1452211/@14.8730244,74.9476134,7z/data=!3m1!4b1!4m5!4m4!1m1!4e1!1m1!4e1!5m1!1e1?entry=ttu&g_ep=EgoyMDI0MTIxMC4wIKXMDSoASAFQAw%3D%3D">ಸ್ಥಳ</a></button>
+                            <!-- <button class="but-2"><a href="#">ಕಾರ್ಡ್</a></button> -->
+                        </div>
+
+
+                        <h1 class="welcome">ಸ್ವಾಗತ</h1>
+
+                       
+                    </center>
+                
+      
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
