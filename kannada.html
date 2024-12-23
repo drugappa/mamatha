@@ -47,6 +47,7 @@
             left: -10px;
             transform: rotate(90deg );
             position: fixed;
+            z-index: 20;
         }
         .header-img-2{
             width: 350px;
@@ -55,6 +56,8 @@
             transform: rotate(-90deg);
             bottom: -10px;
             right: -10px;
+            z-index: 20;
+
         }
         .home-name h4{
             padding-top: 100px;
@@ -112,7 +115,7 @@
             height: 250px;
             transform: translatey(-50%)rotate(90deg);
             overflow: hidden;
-            animation: box 3s linear infinite;
+            /* animation: box 3s linear infinite; */
         }
         /* @keyframes box{
             0%{
@@ -153,26 +156,99 @@
             
         }
         .plase{
-            width: 300px;
-            border: 3px solid goldenrod;
+            width: 280px;
+            z-index: 5;
+            /* border: 3px solid goldenrod; */
             padding: 15px;
-            height: 180px;
+            background-color:#1b1a1a ;
+            height: 150px;
+        }
+        .card1{
+            width: 300px;
+            height: 160px;
+            background-color: transparent;
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             
+        }
+        .card1::before{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background:conic-gradient(rgb(173, 152, 37),rgb(255, 217, 0), rgb(201, 179, 52),rgb(125, 120, 91), transparent, transparent) ;
+            animation: zoom 1s linear infinite;
+            z-index: -1;
+        }
+        @keyframes zoom{
+            0%{
+                transform: rotate(0deg) scale(3);
+            }
+            100%{
+                transform: rotate(360deg) scale(3);
+            }
         }
         .samp{
             font-size: 2rem;
         }
 
         button{
+            
             border: none;
-            padding: 10px 15px;
-            background-color:  hsla(60, 1%, 30%, 0.601);
+            padding: 10px 15px 5px 15px;
+            background-color:  hsla(0, 0%, 53%, 0.905);
             font-size: 1.5rem;
             margin: 10px;
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
             border-radius: 30px;
             border: 3px solid hsl(35, 85%, 35%);
             /* box-shadow: 0px 0px 20px   hsla(46, 91%, 82%, 0.568); */
+            animation: box 1.5s infinite linear;
+            opacity: 1.5s;
+            line-height:.9;
+              }
+        .cleck{
+        font-size:1rem;
+       }
+        @keyframes box{
+            0%{
+                transform:scale(0s);
+                /* box-shadow: 2px 2px 10px goldenrod; */
+                opacity: 0.1s;
+                background-color: rgb(101, 109, 121);
+            }
+            25%{
+                transform:scale(0.5s);
+                /* box-shadow: 0px 0px 10px goldenrod; */
+            }
+            50%{
+                transform:scale(1s);
+                /* box-shadow: 0px 0px 15px goldenrod; */
+                opacity:0.5 ;
+                background-color: rgb(86, 102, 126);
+
+            }
+            75%{
+                transform:scale(05.s);
+                /* box-shadow: 2px 2px 10px goldenrod; */
+                background-color: rgb(64, 89, 127);
+
+
+            }
+            100%{
+                transform:scale(0s);
+                /* box-shadow: 2px 2px 10px goldenrod; */
+                opacity: 0.1s;
+                background-color:transparent;
+
+            }
         }
         .button{
             padding-top: 50px;
@@ -181,7 +257,7 @@
         }
         .button a{
             text-decoration: none;
-            color: rgb(255, 208, 208);
+            color: rgb(189, 170, 22);
         }
         .welcome{
             font-size: 4rem;
@@ -192,6 +268,9 @@
         }
 
 
+       
+
+
         @media(max-width:350Px){
                  main{
                     /* padding-top: 100px; */
@@ -199,9 +278,11 @@
                     background: center cover;
                 }
                 .header-img-1{
-                    display: none;
+                    /* display: none; */
                     width: 80px;
                     height: 80px;
+                    top: -10px;
+                    left: -10px;
                 }
                 .header-img-2{
                     width: 80px;
@@ -209,6 +290,7 @@
                 }     
                 .home-name h1{
                     font-size: 0.8rem;
+                    
                 }
                 .home-name h3{
                     font-size: 1rem;
@@ -216,6 +298,7 @@
                 .home-name h4{
                     padding-top: 50px;
                     font-size: 1rem;
+                   
                 }
                 .home-name h2{
                     font-size: 1rem;
@@ -244,7 +327,7 @@
                 }
                 .rogh{
                     width: 120px;
-                    height: 50px;
+                    height: 80px;
                 }
                 .welcome{
                     font-size: 2rem;
@@ -290,6 +373,7 @@
                 .mamatha img{
                     display: none;
                     width: 20px;
+                    gap: 5px;
                     height: 20px;
                 }
                 .manjunath h1{
@@ -297,6 +381,7 @@
                 }
                 .manjunath img{
                     display: none;
+                    gap: 3px;
                     width: 20px;
                     height: 20px;
                 }
@@ -366,8 +451,10 @@
                 <div class="home-name">
                     <center>
                         <h4>!! ಶ್ರೀ ಮೈಲಾರಲಿಂಗೇಶ್ವರ ಕೃಪಾ !!</h4>
-                <h1>~~ ಮೇಧಾರ ಪರಿವಾರ~~</h1>
+                
                 <h3>!!ಶ್ರೀಮತಿ ದುರ್ಗಮ್ಮ, ಲಕ್ಷ್ಮಣ್ಣ ಮೇಧಾರ್!!</h3>
+
+                <h1>~~ ಮೇಧಾರ ಪರಿವಾರ~~</h1>
 
                 <img class="ring" src="https://purepng.com/public/uploads/large/purepng.com-gold-ring-with-diamondsjewelryjewellerybroochesringsnecklacesearringsearringsornamentsflowersdiamond-1701528880572wdbxw.png" alt="loding">
 
@@ -409,9 +496,11 @@
                         <img class="rogh" src="http://www.pngmart.com/files/8/Romantic-Pink-Flower-Border-PNG-Photos.png" alt="">
 
                             <p class="pero">ಕ್ರೋಧಿನಾಮ ಸಂಖ್ಯೆ 1946. ಕಾರ್ತಿಕ ಬಿ. 10 ಶುಕ್ರವಾರ ದಿನಾಂಕ: 27-12-2024 ರಂದು ಬೆಳಿಗ್ಗೆ 11-34 AM <br> ಮಿಥುನ ನಿಶ್ಚಿತಾರ್ಥ ಶುಭ ದಿನದಂದು, ನಿಶ್ಚಿತಾರ್ಥ.</p>
-                        <div class="plase">
-                            <h1>ಸ್ಥಳ</h1>
-                            <p>ಮೈಲಾಪುರ ಅಗಸಿ  ಚಾಟಿತೋಟ, ಯಾದಗಿರಿ, <samp class="samp">585201</samp></p>
+                        <div class="card1">
+                            <div class="plase">
+                                <h1>ಸ್ಥಳ</h1>
+                                <p>ಮೈಲಾಪುರ ಅಗಸಿ  ಚಾಟಿತೋಟ, ಯಾದಗಿರಿ, <samp class="samp">585201</samp></p>
+                            </div>
                         </div>
 
                         <audio controls autoplay  type="adio/mp3">
@@ -419,7 +508,9 @@
                         </audio>
 
                         <div class="button">
-                            <button class="but-1"><a href="https://www.google.co.in/maps/dir/12.9930341,77.5391677/16.7705646,77.1452211/@14.8730244,74.9476134,7z/data=!3m1!4b1!4m5!4m4!1m1!4e1!1m1!4e1!5m1!1e1?entry=ttu&g_ep=EgoyMDI0MTIxMC4wIKXMDSoASAFQAw%3D%3D">ಸ್ಥಳ</a></button>
+                            <button class="but-1"><a href="https://www.google.co.in/maps/dir/12.9930341,77.5391677/16.7705646,77.1452211/@14.8730244,74.9476134,7z/data=!3m1!4b1!4m5!4m4!1m1!4e1!1m1!4e1!5m1!1e1?entry=ttu&g_ep=EgoyMDI0MTIxMC4wIKXMDSoASAFQAw%3D%3D">ಸ್ಥಳ 
+                               <samp    class=" cleck ">     (LOCATION)   </samp>
+                            </a></button>
                             <!-- <button class="but-2"><a href="#">ಕಾರ್ಡ್</a></button> -->
                         </div>
 
